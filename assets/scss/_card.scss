@@ -50,6 +50,10 @@
   padding: $card-spacer-y $card-spacer-x;
   color: $card-color;
   @extend .bg-dark;
+  a{
+    @extend .btn-rosa;
+    @extend .text-white;
+  }
 }
 
 .card-title {
