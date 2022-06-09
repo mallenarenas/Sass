@@ -54,6 +54,7 @@
 
 .card-title {
   margin-bottom: $card-title-spacer-y;
+  @extend .text-rosa;
 }
 
 .card-subtitle {
@@ -61,10 +62,12 @@
   margin-bottom: 0;
 }
 
-.card-text:last-child {
+.card-text{
+  &:last-child {
   margin-bottom: 0;
+  }
+  @extend .text-white;
 }
-
 .card-link {
   &:hover {
     text-decoration: if($link-hover-decoration == underline, none, null);
