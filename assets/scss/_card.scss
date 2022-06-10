@@ -49,10 +49,17 @@
   flex: 1 1 auto;
   padding: $card-spacer-y $card-spacer-x;
   color: $card-color;
+  @extend .bg-dark;
+  a{
+    @extend .btn-rosa;
+    @extend .text-white;
+  }
+  font-family: $font-family-caveat;
 }
 
 .card-title {
   margin-bottom: $card-title-spacer-y;
+  @extend .text-rosa;
 }
 
 .card-subtitle {
@@ -60,10 +67,12 @@
   margin-bottom: 0;
 }
 
-.card-text:last-child {
+.card-text{
+  &:last-child {
   margin-bottom: 0;
+  }
+  @extend .text-white;
 }
-
 .card-link {
   &:hover {
     text-decoration: if($link-hover-decoration == underline, none, null);
